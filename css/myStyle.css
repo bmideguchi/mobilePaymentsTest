@@ -1,0 +1,73 @@
+@font-face {
+    font-family: kredit;
+    src: url(../fonts/kredit.ttf);
+}
+
+.button{
+	background-color: #356;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+#card{
+	font-family: kredit;
+	font-size: 28px;
+	width: 100%;
+	border-radius: 20px;
+	padding: 80px 20px 40px 20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
+	background: #f6f8f9; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.smartphone{
+	padding: 100px 40px;
+	background-image: url('../img/smartphone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+.fakeAlert{
+	width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#OTPInput{
+	width: 100%;
+}
+
+#sms{
+	width: 205px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-top: -55px;
+    margin-left: -15px;
+    margin-bottom: 60px;
+    padding: 10px;
+    background-color: beige;
+}
+
+h2{
+	font-size: 14px;
+}
+
+.step{
+	display: none;
+}
+
+#step1{
+	display: block;
+}

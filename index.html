@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo - Enrollment</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Demo project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/myStyle.css"></link>
+</head>
+<body>
+
+	<!--Cardholder-->
+	<div class="col-md-3"><h1>Cardholder</h1>
+
+		<!--Primeiro Passo-->
+		<div class="step" id="step1">
+			<div class="col-md-12"><h2>Pedir cartão</h2>
+				<input class="col-md-12" type="textbox" id="cardholderName" placeholder="Escreva o nome aqui"></input>
+				<div class="col-md-12 button" id="pedirCartao">Pedir cartão</div>
+			</div>
+		</div>
+
+		<!--Quarto Passo-->
+		<div class="step" id="step4">
+			<h2>Parabéns! Agora você tem um cartão.</h2>
+			<div id="card">
+				<div id="sampleCardName"></div>
+				<div id="sampleCardNumber"></div>
+			</div>
+			<div class="col-md-12"><h2>Cadastrar na wallet</h2>
+				<div class="smartphone">
+					<input class="col-md-12" type="textbox" id="cardholderNumber" placeholder="Insira o número do cartão"></input>
+					<div class="col-md-12 button" id="cadastrarNaWallet">Cadastrar na wallet</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Nono Passo-->
+		<div class="step" id="step9">
+			<div class="col-md-12"><h2>Aceitar termos e pedir token</h2>
+				<div class="smartphone">
+					
+					<p>Termos e condições</p>
+					<p>Blablabla blabal blabla Blablabla blabal blabla Blablabla blabal blablaBlablabla blabal blablaBlablabla blabal blabla</p>
+					<div class="col-md-12 button" id="aceitarTermos">Aceitar termos</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Decimo quinto Passo-->
+		<div class="step" id="step15">
+			<div class="col-md-12"><h2>OTP</h2>
+				<div class="smartphone">
+					<div class="col-md-12" id="sms">SMS:</div>
+					<div class="fakeAlert">
+						<p>Insira abaixo o código recebido por SMS</p>
+						<input type="number" placeholder="insira o código" id="OTPInput">
+						<div class="button" id="enviarOTP">Enviar Código</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Decimo sexto Passo-->
+		<div class="step" id="step16">
+			<div class="col-md-12"><h2>Finalização</h2>
+				<div class="smartphone">
+					<div class="fakeAlert">
+						<h2>Parabéns!</h2>
+						<p>Seu cartão está pronto para ser usado!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--WSP-->
+	<div class="col-md-3"><h1>WSP</h1>
+
+		<!--Quinto Passo-->
+		<div class="step" id="step5">
+			<div class="col-md-12">
+				<h2>Enrollment solicitations</h2>
+				<ul id="enrollmentSolicitations">
+				</ul>
+			</div>
+		</div>
+
+		<!--Oitavo Passo-->
+		<div class="step" id="step8">
+			<div class="col-md-12">
+				<h2>Enrollments Approval</h2>
+				<ul id="enrollmentApproval">
+				</ul>
+			</div>
+		</div>
+
+		<!--Decimo Passo-->
+		<div class="step" id="step10">
+			<div class="col-md-12">
+				<h2>Provisioning solicitations</h2>
+				<ul id="provisioningSolicitations">
+				</ul>
+			</div>
+		</div>
+
+		<!--Decimo terceiro Passo-->
+		<div class="step" id="step13">
+			<div class="col-md-12">
+				<h2>Provisioning Approval</h2>
+				<ul id="provisioningApproval">
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--TSP-->
+	<div class="col-md-3"><h1>TSP</h1>
+
+		<!--Sexto Passo-->
+		<div class="step" id="step6">
+			<div class="col-md-12">
+				<h2>Enrollment solicitations</h2>
+				<ul id="enrollmentSolicitationsTSP">
+				</ul>
+			</div>
+		</div>
+
+		<!--Setimo Passo-->
+		<div class="step" id="step7">
+			<div class="col-md-12">
+				<h2>Enrollments Approval</h2>
+				<ul id="enrollmentApprovalTSP">
+				</ul>
+			</div>
+		</div>
+
+		<!--Decimo primeiro Passo-->
+		<div class="step" id="step11">
+			<div class="col-md-12">
+				<h2>Provisioning solicitations</h2>
+				<ul id="provisioningSolicitationsTSP">
+				</ul>
+			</div>
+		</div>
+
+		<!--Decimo segundo Passo-->
+		<div class="step" id="step12">
+			<div class="col-md-12">
+				<h2>Provisioning Approval</h2>
+				<ul id="provisioningApprovalTSP">
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<!--EMISSOR-->
+	<div class="col-md-3"><h1>Issuer</h1>
+
+		<!--Segundo Passo-->
+		<div class="step" id="step2">
+			<div class="col-md-12">
+				<h2>Cartões solicitados</h2>
+				<ul id="cartoesSolicitados">
+				</ul>
+				<div class="col-md-12 button" id="gerarCartao">Aceitar e gerar cartão</div>
+			</div>
+		</div>
+
+		<!--Terceiro Passo-->
+		<div class="step" id="step3">
+			<div class="col-md-12">
+				<h2>Cartões gerados</h2>
+				<table id="cartoesGerados">
+				</table>
+			</div>
+		</div>
+
+		<!--Decimo quarto Passo-->
+		<div class="step" id="step14">
+			<div class="col-md-12">
+				<h2>Aprovações OTP solicitadas</h2>
+				<div class="col-md-12" id="otpList">otp:</div>
+			</div>
+		</div>
+
+		<!--Decimo setimo Passo-->
+		<div class="step" id="step17">
+			<div class="col-md-12">
+				<div class="col-md-12"><font color="green"><b>otp aprovada</b></font></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/mpaymentSample.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+</html>
